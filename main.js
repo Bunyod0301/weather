@@ -109,3 +109,8 @@ ok=()=> {
         document.getElementById("tezliklar").style.opacity = "0"
 document.getElementById("search").value = ""
 }
+document.onkeydown=function(b) {
+    if(b.ctrlKey && b.keyCode =='U'.charCodeAt(0) ) {
+        return false;
+    }
+}
