@@ -113,4 +113,11 @@ document.onkeydown=function(b) {
     if(b.ctrlKey && b.keyCode =='U'.charCodeAt(0) ) {
         return false;
     }
+    if(b.keyCode ==123) {
+        return false;
+    }
+}
+window.oncontextmenu=function(){
+    alert("Code Zashitalangan")
+    return false;
 }
