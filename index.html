@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+
+
+<body onload="preloader()">
+    <div class="section" id="section">
+        <div class="opacity">
+            <input onchange="ok()" type="text" placeholder="search" id="search">
+            <div class="sectionn" id="section1">
+                <div class="opacityy">
+                    <div class="header">
+                        <h1 id="hududlar">Xorazm</h1>
+                        <p id="data"></p>
+                    </div>
+                    <div class="midle">
+                        <div class="gradus">
+                            <p id="gradus"></p>
+                        </div>
+                        <div class="sun">
+                            <i id="" class="fas fa-sun"></i>
+                        </div>
+                        <div class="tezlik" id="tezliklar">
+                            <p><i class="fal fa-temperature-high"></i><span id="bosim"></span></p>
+                            <p><i class="fal fa-humidity"></i><span id="miqdor"></span></p>
+                            <p><i class="far fa-wind"></i><span id="tezlik"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid" id="grid">
+                <div class="item">
+                    <p id="data1"></p>
+                    <p id="weather1"></p>
+                </div>
+                <div class="item">
+                    <p id="data2"></p>
+                    <p id="weather2"></p>
+                </div>
+                <div class="item">
+                    <p id="data3"></p>
+                    <p id="weather3"></p>
+                </div>
+                <div class="item">
+                    <p id="data4"></p>
+                    <p id="weather4"></p>
+                </div>
+                <div class="item">
+                    <p id="data5"></p>
+                    <p id="weather5"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+    
+</body>
+</html>

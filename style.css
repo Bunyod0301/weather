@@ -1,0 +1,196 @@
+body,p,h3 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section {
+    width: 100%;
+    height: 635px;
+    background-image: url("./khiva-boyjon-ota-urganch-1609730935.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.opacity {
+    width: 100%;
+    height: 635px;
+    background-color: rgba(0, 0, 0, 0.801);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sectionn {
+    width: 80%;
+    height: 400px;
+    background-image: url("./khiva-boyjon-ota-urganch-1609730935.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+.opacityy {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.401);
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header h1 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 40px;
+}
+.header p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+}
+.midle {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.gradus p {
+    font-size: 120px;
+    color: #fff;
+    transform: translate(-150px,0);
+    transition: 1s;
+    opacity: 0;
+    animation: gradus 1s;
+    animation-delay: 1s;
+}
+@keyframes gradus {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+.sun {
+    margin: 0 10%;
+    animation: sun 1s;
+}
+@keyframes sun {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    70% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+.sun i {
+    font-size: 90px;
+    color: yellow;
+}
+.tezlik p{
+    font-size: 20px;
+    color: #fff;
+    
+}
+.tezlik {
+    transform: translate(150px,0);
+    transition: 1s;
+    opacity: 0;
+}
+.tezlik p span {
+    margin: 0 10px;
+}
+#search {
+    padding: 7px 10px;
+    transform: translate(0px,-20px);
+    background-color: rgba(255, 255, 255, 0.178);
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+@media(max-width:500px) {
+    .section {
+      height:835px;
+    }
+    .opacity {
+        height: 835px;
+    }
+    .midle {
+        display: flex;
+        flex-direction: column;
+    }
+    .sun i {
+        font-size: 30px;
+    }
+    .gradus p {
+        font-size: 30px;
+    }
+    .tezlik p {
+        font-size: 10px;
+    }
+    .sectionn {
+        width: 200px;
+        height: 300px;
+    }
+    #hududlar {
+        font-size: 30px;
+    }
+    #search {
+    width: 180px;
+    padding: 7px 10px;
+    transform: translate(0px,-20px);
+    background-color: rgba(255, 255, 255, 0.178);
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+}
+.grid {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transform: translate(0, 40px);
+    transition: 1s;
+    opacity: 0;
+}
+.grid .item {
+    padding: 25px 20px;
+    background-color: rgba(255, 255, 255, 0.616);
+    transition: 0.3s;
+}
+.item:hover {
+    background-color: rgba(0, 0, 0, 0.603);
+    color: #fff;
+    transform: translate(0,-20px);
+}
+.item p {
+    text-align: center;
+    font-size: 20px;
+}
+.item p:nth-child(2) {
+    font-weight: bold;
+    margin-top: 10px;
+}
+@media(max-width:500px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+    .grid .item {
+        padding: 10px 5px;
+        margin: 10px 0;
+    }
+    .item:hover {
+        transform: translate(0,-10px);
+    }
+    .item p {
+        font-size: 12px;
+    }
+}
