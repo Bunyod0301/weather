@@ -116,6 +116,9 @@ document.onkeydown=function(b) {
     if(b.keyCode ==123) {
         return false;
     }
+    if(b.ctrlKey && b.shiftKey && b.keyCode=='I'.charCodeAt(0)){
+        return false;
+    }
 }
 window.oncontextmenu=function(){
     alert("Code Zashitalangan")
