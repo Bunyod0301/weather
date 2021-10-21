@@ -121,6 +121,5 @@ document.onkeydown=function(b) {
     }
 }
 window.oncontextmenu=function(){
-    alert("Code Zashitalangan")
     return false;
 }
